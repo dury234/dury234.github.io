@@ -1,0 +1,115 @@
+ body {
+    width: 80%;
+    margin: 0px auto;
+ }   
+    
+    #anakin {
+    /*   position: absolute;
+      left: 0px;
+      top: 0px; */
+      padding: 0px;
+      margin: 0px;
+      width: 100%;
+      z-index: -1;
+    }
+    
+    .pic {
+      position: relative;
+      width: 100%;
+      margin: 0px ;
+      padding: 0px;
+    }
+    
+    .headline{
+      position: absolute;
+      z-index: 1;
+      bottom: 10%;
+      left: 20%;
+    }
+    
+    h1, h2 {
+      font-family: 'Abril Fatface', cursive;
+      color: #222;   
+      margin: 0px;
+    }
+    
+    h2 {
+      font-size: 60px;  
+    }
+    
+    .intro {
+        width: 70%;
+        margin-left: 20%;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 1.6;
+    }
+    
+    blockquote {
+      display: inline-block;
+      color: white;
+      background: #333333;
+      width: 50%;
+      font-family: 'Abril Fatface', cursive;
+      font-size: 50px;
+      /* margin-left: 20%; */
+      padding: 0px 15px 15px 15px;
+      margin-left: 20%;
+    }
+
+    blockquote::before {
+        content: ',,';
+        font-size: 150%;
+        padding-bottom: 0px;
+        ;
+    }
+
+    .content {
+        width: 70%;
+        margin-left: 20%;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+h4 {
+    margin: 15px 20%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 70%;
+    
+}
+
+h5 {
+    font-weight: 600;
+    margin: 50px 0px 15px 20%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 26px;
+}
+
+h6 {
+    margin: 10px 20%;
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 23px;
+    font-style: italic;
+}
+
+ul {
+    width: 70%;
+    margin-left: 20%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 1.6;
+}
+
+#personal {
+    padding-top: 50px;
+    border-top: solid 5px #222;
+    margin-top: 50px;
+}
