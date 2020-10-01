@@ -1,0 +1,14 @@
+div:hover {
+    background: orange;
+}
+
+div {
+    width: 300px;
+    padding: 25px 10px;
+    margin: 0px auto;
+    border: solid 2px black;
+}
+
+h1 {
+    margin-left: 42%;
+}
