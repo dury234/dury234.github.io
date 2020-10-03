@@ -5,7 +5,14 @@ $("#one").click(() => {
 $("#two").click(() => {
     $("#one").text("Changed");
 })
-
+let test = 0;
 $("#three").click(() => {
-    $("button").css("background-color","#584563");
+    if (test == 0) {
+        let col = document.getElementById("color").value;
+        $("button").css("background-color", col);
+        
+    } else {
+        $("body").append("<p> You have already clicked the button " + test + " times!");
+    }
+    test++;
 })
