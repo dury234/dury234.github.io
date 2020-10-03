@@ -1,0 +1,26 @@
+body {
+  width: 700px;
+  font-family: "Merriweather";
+}
+
+h1 {
+  color: orange;
+}
+
+h2 {
+  color: purple;
+}
+
+.underline {
+  color: #;
+  text-decoration: underline;
+  
+}
+
+ol {
+  list-style-type: upper-roman;
+}
+
+ul {
+  list-style-type: square;
+}
