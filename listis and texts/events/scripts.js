@@ -17,3 +17,8 @@ $("#three").click(() => {
     }
     test++;
 })
+
+$("#addTodo").click(() => {
+   let action = document.getElementById("todo").value;
+   $("#todos").append(`<li>${action}`);
+})
