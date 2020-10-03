@@ -10,9 +10,10 @@ $("#three").click(() => {
     if (test == 0) {
         let col = document.getElementById("color").value;
         $("button").css("background-color", col);
+        $("#three").text("Try me once again!");
         
     } else {
-        $("body").append("<p> You have already clicked the button " + test + " times!");
+        $("#HowMany").text("You have already clicked the button " + test + " times!");
     }
     test++;
 })
