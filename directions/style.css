@@ -1,0 +1,33 @@
+main {
+  background: blue;
+  width: 400px;
+  height: auto;
+  padding: 10px;
+}
+
+p {
+  text-align: center;
+  font-size: 30px;
+  font-family: "comic sans MS", comic sans;
+  font-weight: 200;
+  color: white;
+  padding: 25px 10px 25px 10px;
+  margin: 0px;
+}
+
+.first {
+  background: #E67676;
+    
+}
+
+.second {
+  background: #F2F062;
+}
+
+.third {
+  background: #A9E6E6;
+}
+
+.fourth {
+  background: #7692E4;
+}
