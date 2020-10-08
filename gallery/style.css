@@ -17,6 +17,7 @@ body {
     padding: 0px;
     position: relative;
     border: none;
+    height: 100%;
 }
 
 .back, .forward {
@@ -48,12 +49,17 @@ bottom: 0px;
 left: 0px;
 width: 100%;
 padding: 0px;
+margin: 0px;
 background: rgba(5, 4, 4, 0.6);
 transition: font-size 1s;
 }
 
 .description:hover {
     font-size: 22px;
+}
+
+#photo {
+    height: 100%;
 }
 
 #photo-title {
