@@ -60,6 +60,7 @@ transition: font-size 1s;
 
 #photo {
     height: 100%;
+    width: 100%;
 }
 
 #photo-title {
