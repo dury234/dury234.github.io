@@ -63,12 +63,17 @@ $(".back").click(() => {
     
     loadPhoto(currentPhoto);
 });
-let counter = 0;
 
-data.forEach(element => {
+data.forEach((element, index) => {
 
-    $(".thumbnail").append(`<div class="img"><img src="${element.photo}" width="100%"><div class="hover">${element.title}</div></div>`);
-
+    $(".thumbnail").append(`<div class="img"><img src="${element.photo}" width="100%" data-number="${index}"><div class="hover">${element.title}</div></div>`);
 });
 
-counter++;
+$(".img").click((event) => {
+    let indexclicked = $(event.target).attr("data-number");
+    let numberIndex = parseInt(indexclicked);
+    loadPhoto(numberIndex);
+})
+
+
+
