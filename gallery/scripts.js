@@ -40,9 +40,11 @@ let loadPhoto = (photoNumber) => {
     $("#photo").attr("src", data[photoNumber].photo);
     $("#photo-title").text(data[photoNumber].title);
     $("#photo-description").text(data[photoNumber].description);
+    $("[data-number]").attr("border", "none");
+    $(`*[data-number="${currentPhoto}"]`).attr("border", "2px solid black");
 }
 
-loadPhoto(currentPhoto);
+
 
 $(".forward").click(() => {
     if (currentPhoto == data.length -1) {
@@ -66,15 +68,15 @@ $(".back").click(() => {
 
 data.forEach((element, index) => {
 
-    $(".thumbnail").append(`<div class="img"><img src="${element.photo}" width="100%" data-number="${index}"><div class="hover">${element.title}</div></div>`);
+    $(".thumbnail").append(`<div class="img"><img src="${element.photo}" width="100%" data-number="${index}"><div class="hover" data-number="${index}">${element.title}</div></div>`);
 });
 
-$(".img").click((event) => {
+$(".img, .hover").click((event) => {
     let indexclicked = $(event.target).attr("data-number");
     let numberIndex = parseInt(indexclicked);
-    loadPhoto(numberIndex);
     currentPhoto = numberIndex;
+    loadPhoto(numberIndex);
+    
 })
 
-
-
+loadPhoto(currentPhoto);
