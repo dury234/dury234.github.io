@@ -73,6 +73,7 @@ $(".img").click((event) => {
     let indexclicked = $(event.target).attr("data-number");
     let numberIndex = parseInt(indexclicked);
     loadPhoto(numberIndex);
+    currentPhoto = numberIndex;
 })
 
 
