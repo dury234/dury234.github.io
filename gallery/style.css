@@ -43,8 +43,8 @@ body {
 }
 
 .back:hover, .forward:hover {
-    opacity: 1;
-    background: rgba(184, 130, 30, 1);
+    opacity: 0.8;
+    background: rgb(189, 181, 168);
 
 }
 
