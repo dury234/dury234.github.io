@@ -35,11 +35,18 @@ body {
     cursor: pointer;
     transition: .5s ease;
     margin: 0px;
-    padding: 0px;    
+    padding: 0px;   
+}
+
+.back {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px; 
 }
 
 .forward {
     right: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .back:hover, .forward:hover {
