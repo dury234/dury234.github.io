@@ -42,7 +42,9 @@ let loadPhoto = (photoNumber) => {
     $("#photo-description").text(data[photoNumber].description);
     $("[data-number]").attr("border", "none");
     $(`*[data-number="${currentPhoto}"]`).attr("border", "2px solid black");
-}
+    $("[data-number]").css("filter", "grayscale(1)");
+    $(`*[data-number="${currentPhoto}"]`).css("filter", "grayscale(0)");
+};
 
 
 
